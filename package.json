@@ -1,0 +1,30 @@
+{
+    "name": "cse341_movies",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js",
+        "swagger": "node ./swagger.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sterlingt22/CSE341_movies.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sterlingt22/CSE341_movies/issues"
+    },
+    "homepage": "https://github.com/sterlingt22/CSE341_movies#readme",
+    "dependencies": {
+        "express": "^4.18.2",
+        "oauth2-server": "^3.1.1",
+        "swagger-autogen": "^2.23.7",
+        "swagger-ui-express": "^5.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.3"
+    }
+}

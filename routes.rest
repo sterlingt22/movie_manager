@@ -1,0 +1,38 @@
+### GET All Movies ###
+GET http://localhost:3000/movies
+
+### POST New Movie ###
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title": "Interstellar",
+    "genre": "Science Fiction",
+    "director": "Christopher Nolan",
+    "year": 2014,
+    "rating": 8.7
+}
+
+### GET Single Movie ###
+GET http://localhost:3000/movies/65c48e75f940a690598b582a
+### GET Single Movie ###
+GET http://localhost:3000/movies/65c48e75f940a690598b582b
+### GET Single Movie ###
+GET http://localhost:3000/movies/65c48e75f940a690598b582c
+### GET Single Movie ###
+GET http://localhost:3000/movies/65c48e75f940a690598b582d
+
+### PUT Update Movie ###
+PUT http://localhost:3000/movies/65c7bafc7545626e519d8506
+Content-Type: application/json
+
+{
+    "title": "Interstellar",
+    "genre": "Science Fiction",
+    "director": "Christopher Nolan",
+    "year": 2014,
+    "rating": 8.7
+}
+
+### DELETE Movie ###
+DELETE http://localhost:3000/movies/65c7bebda464f37bedbe4885
