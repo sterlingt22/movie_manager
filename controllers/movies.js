@@ -37,8 +37,7 @@ const createMovie = async (req, res) => {
     };
     const response = await mongodb.getDb().db().collection('movies').insertOne(movie);
     if (response.acknowledged) {
-      const createdMovie = response.ops[0];
-      res.status(201).json(createdMovie);
+      res.status(201).json();
     } else {
       res.status(500).json(response.error || 'Some error occurred while creating the movie.');
     }
