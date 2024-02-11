@@ -8,7 +8,7 @@ routes.use('/movies', movie);
 routes.use('/', (req, res, next) => {
     
     req.docData = {
-        documentationURL: 'https://github.com/sterlingt22/CSE341.git',
+        documentationURL: 'https://github.com/sterlingt22/movie_manager.git',
     };
    
     next();
