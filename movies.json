@@ -4,27 +4,27 @@
         "genre": "Science Fiction",
         "director": "Christopher Nolan",
         "year": 2010,
-        "rating": 8.8
+        "rating": "PG-13"
     },
     {
         "title": "The Shawshank Redemption",
         "genre": "Drama",
         "director": "Frank Darabont",
         "year": 1994,
-        "rating": 9.3
+        "rating": "R"
     },
     {
         "title": "The Godfather",
         "genre": "Crime",
         "director": "Francis Ford Coppola",
         "year": 1972,
-        "rating": 9.2
+        "rating": "R"
     },
     {
         "title": "Pulp Fiction",
         "genre": "Crime",
         "director": "Quentin Tarantino",
         "year": 1994,
-        "rating": 8.9
+        "rating": "R"
     }
 ]
