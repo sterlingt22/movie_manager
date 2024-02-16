@@ -3,7 +3,7 @@ GET http://localhost:3000/movies
 
 
 ### GET Single Movie ###
-GET http://localhost:3000/movies/65cea088f940a690598b5835
+GET http://localhost:3000/movies/65cea088f940a690598b5834
 ### GET Single Movie ###
 GET http://localhost:3000/movies/65cea088f940a690598b5835
 ### GET Single Movie ###
@@ -58,13 +58,13 @@ Content-Type: application/json
 }
 
 ### GET Single Movie ###
-GET https://cse341-winter24-uqt1.onrender.com/movies/65c48e75f940a690598b582a
+GET https://cse341-winter24-uqt1.onrender.com/movies/65cea088f940a690598b5834
 ### GET Single Movie ###
-GET https://cse341-winter24-uqt1.onrender.com/movies/65c48e75f940a690598b582b
+GET https://cse341-winter24-uqt1.onrender.com/movies/65cea088f940a690598b5835
 ### GET Single Movie ###
-GET https://cse341-winter24-uqt1.onrender.com/movies/65c48e75f940a690598b582c
+GET https://cse341-winter24-uqt1.onrender.com/movies/65cea088f940a690598b5836
 ### GET Single Movie ###
-GET https://cse341-winter24-uqt1.onrender.com/movies/65c48e75f940a690598b582d
+GET https://cse341-winter24-uqt1.onrender.com/movies/65cea088f940a690598b5837
 
 ### Create movie
 POST https://cse341-winter24-uqt1.onrender.com/movies HTTP/1.1
