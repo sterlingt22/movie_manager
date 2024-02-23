@@ -4,7 +4,7 @@ const mongodb = require('./db/connect')
 const port = process.env.PORT || 8080;
  
 const app = express();
- 
+
 app
     .use(bodyParser.json())
 //set up CORS headers
@@ -26,3 +26,5 @@ mongodb.initDb((err) => {
             console.log(`Connected to database and listening on ${port}`);
         }
 });
+
+module.exports = app;

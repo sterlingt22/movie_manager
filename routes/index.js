@@ -1,5 +1,7 @@
-const routes = require('express').Router();
+const express = require('express');
+const app = require('../server');
 const movie = require('./movies');
+const routes = express.Router();
 const { auth } = require('express-openid-connect');
 
 const config = {
