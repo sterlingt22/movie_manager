@@ -1,5 +1,4 @@
 const express = require('express');
-const { app } = require('../server'); 
 const movie = require('./movies');
 const routes = express.Router();
 const { auth } = require('express-openid-connect');
@@ -12,12 +11,10 @@ const config = {
     clientID: 'Hff8lp9f8fLlCcAPpCktmmcEXRRNk5VP',
     issuerBaseURL: 'https://dev-aq4g00mxk5l1itvh.us.auth0.com'
 };
-  
 
-app.use(auth(config));
-  
+routes.use(auth(config));
 
-app.get('/', (req, res) => {
+routes.get('/', (req, res) => {
     res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
 });
 
