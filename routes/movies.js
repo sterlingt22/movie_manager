@@ -18,16 +18,11 @@ const config = {
     issuerBaseURL: 'https://dev-aq4g00mxk5l1itvh.us.auth0.com'
 };
 
-router.use(auth(config));
+router.get('/', auth(config), moviesController.getAll);
+router.get('/:id', auth(config), moviesController.getSingle);
+router.post('/', auth(config), validateMovie, moviesController.createMovie);
+router.put('/:id', auth(config), validateMovie, moviesController.updateMovie);
+router.delete('/:id', auth(config), moviesController.deleteMovie);
 
-router.get('/', moviesController.getAll);
-
-router.get('/:id', moviesController.getSingle);
-
-router.post('/', validateMovie, moviesController.createMovie);
-
-router.put('/:id', validateMovie, moviesController.updateMovie);
-
-router.delete('/:id', moviesController.deleteMovie);
 
 module.exports = router;
