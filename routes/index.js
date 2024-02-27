@@ -6,7 +6,7 @@ const { auth } = require('express-openid-connect');
 const config = {
     authRequired: false,
     auth0Logout: true,
-    secret: 'a long, randomly-generated string stored in env',
+    secret: '57xg29C13cCPU6zkthW0Q5Cg5PuUcWtNn_KkFymFeOXwolvRFNREgmCMp8oBqt5h',
     baseURL: 'https://cse341-winter24-uqt1.onrender.com',
     clientID: 'Hff8lp9f8fLlCcAPpCktmmcEXRRNk5VP',
     issuerBaseURL: 'https://dev-aq4g00mxk5l1itvh.us.auth0.com'
