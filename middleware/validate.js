@@ -95,8 +95,19 @@ const validateActor = [
       return res.status(422).json({ errors: errors.array() });
     }
 
+    const { title, release_year, actors } = req.body;
+    const actor = { title, release_year, actors };
+
+    if (release_year) {
+      actor.release_year = parseInt(release_year, 10);
+    }
+
+    req.validatedActor = actor;
     next();
   }
 ];
 
-module.exports = validateMovie;
+module.exports = {
+  validateMovie,
+  validateActor
+};
