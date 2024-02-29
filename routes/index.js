@@ -1,5 +1,6 @@
 const express = require('express');
 const movie = require('./movies');
+const actor = require('./actors');
 const routes = express.Router();
 const { auth } = require('express-openid-connect');
 
@@ -20,6 +21,7 @@ routes.get('/', (req, res) => {
 
 routes.use('/', require('./swagger'));
 routes.use('/movies', movie);
+routes.use('/actors', actor);
 
 routes.use('/', (req, res, next) => {
     req.docData = {

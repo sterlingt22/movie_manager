@@ -60,4 +60,35 @@ const validateMovie = [
   }
 ];
 
+const validateActor = [
+  check('title')
+    .notEmpty()
+    .withMessage('Title is required')
+    .isLength({ max: 50 })
+    .withMessage('Title must be at most 50 characters'),
+  check('release_year')
+    .notEmpty()
+    .withMessage('Release year is required')
+    .isNumeric()
+    .withMessage('Release year must be a number'),
+  check('actors')
+    .isArray({ min: 1 })
+    .withMessage('At least one actor must be provided')
+    .custom((value, { req }) => {
+      if (!value.every(actor => typeof actor === 'string')) {
+        throw new Error('Actors must be strings');
+      }
+      return true;
+    }),
+
+  (req, res, next) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(422).json({ errors: errors.array() });
+    }
+
+    next();
+  }
+];
+
 module.exports = validateMovie;

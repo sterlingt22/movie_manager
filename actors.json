@@ -1,0 +1,37 @@
+[ 
+    {
+        "title": "Inception",
+        "release_year": 2010,
+        "actors": ["Leonardo DiCaprio", "Ellen Page", "Tom Hardy", "Marion Cotillard"]
+    },
+    {
+        "title": "The Shawshank Redemption",
+        "release_year": 1994,
+        "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton", "William Sadler"]
+    },
+    {
+        "title": "The Godfather",
+        "release_year": 1972,
+        "actors": ["Marlon Brando", "Al Pacino", "James Caan", "Diane Keaton"]
+    },
+    {
+        "title": "Pulp Fiction",
+        "release_year": 1994,
+        "actors": ["John Travolta", "Uma Thurman", "Samuel L. Jackson", "Bruce Willis"]
+    },
+    {
+        "title": "Toy Story",
+        "release_year": 1995,
+        "actors": ["Tom Hanks", "Tim Allen", "Don Rickles", "Jim Varney"]
+    },
+    {
+        "title": "Finding Nemo",
+        "release_year": 2003,
+        "actors": ["Albert Brooks", "Ellen DeGeneres", "Alexander Gould", "Willem Dafoe"]
+    },
+    {
+        "title": "The Lion King",
+        "release_year": 1994,
+        "actors": ["Matthew Broderick", "Jeremy Irons", "James Earl Jones", "Jonathan Taylor Thomas"]
+    }
+]

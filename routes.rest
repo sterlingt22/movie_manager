@@ -1,95 +1,263 @@
+/////GET ALL MOVIES/////
 ### GET All Movies ###
 GET http://localhost:3000/movies
 
+/////GET ALL ACTORS/////
+### GET All Actors ###
+GET http://localhost:3000/actors
 
-### GET Single Movie ###
-GET http://localhost:3000/movies/65cea088f940a690598b5834
-### GET Single Movie ###
-GET http://localhost:3000/movies/65cea088f940a690598b5835
-### GET Single Movie ###
-GET http://localhost:3000/movies/65cea088f940a690598b5836
-### GET Single Movie ###
-GET http://localhost:3000/movies/65cea088f940a690598b5837
 
+/////SINGLE MOVIE/////
+### GET Single Movie ###
+GET http://localhost:3000/movies/65e0360a052cf682e2108942
+### GET Single Movie ###
+GET http://localhost:3000/movies/65e0360a052cf682e2108943
+### GET Single Movie ###
+GET http://localhost:3000/movies/65e0360a052cf682e2108944
+### GET Single Movie ###
+GET http://localhost:3000/movies/65e0360a052cf682e2108945
+### GET Single Movie ###
+GET http://localhost:3000/movies/65e0360a052cf682e2108946
+### GET Single Movie ###
+GET http://localhost:3000/movies/65e0360a052cf682e2108947
+### GET Single Movie ###
+GET http://localhost:3000/movies/65e0360a052cf682e2108948
+
+
+/////SINGLE ACTOR///// 
+### GET Single Actor ###
+GET http://localhost:3000/actors/65e03c74052cf682e2108950
+### GET Single Actor ###
+GET http://localhost:3000/actors/65e03c74052cf682e2108951
+### GET Single Actor ###
+GET http://localhost:3000/actors/65e03c74052cf682e2108952
+### GET Single Actor ###
+GET http://localhost:3000/actors/65e03c74052cf682e2108953
+### GET Single Actor ###
+GET http://localhost:3000/actors/65e03c74052cf682e2108954
+### GET Single Actor ###
+GET http://localhost:3000/actors/65e03c74052cf682e2108955
+### GET Single Actor ###
+GET http://localhost:3000/actors/65e03c74052cf682e2108956
+
+
+/////CREATE MOVIE/////
 ### Create movie
 POST http://localhost:3000/movies HTTP/1.1
 content-type: application/json
 
 {
-   "title": "Interstellar",
-    "genre": "Science Fiction",
-    "director": "Christopher Noland",
+   "title": "Lego Movie",
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Phil Lord, Chris Miller",
     "year": 2014,
-    "rating": "PG-13"
+    "rating": "PG"
 }
 
 
+/////CREATE ACTOR/////
+### Create actor
+POST http://localhost:3000/actors HTTP/1.1
+content-type: application/json
+
+{
+   "title": "The Lego Movie",
+    "release_year": 2014,
+    "actors": [
+                "Will Arnett", 
+                "Will Ferrell", 
+                "Elizabeth Banks", 
+                "Liam Neeson", 
+                "Chris Pratt", 
+                "Nick Offerman", 
+                "Alison Brie", 
+                "Morgan Freeman", 
+                "Charlie Day", 
+                "Channing Tatum", 
+                "T.J. Miller",
+    ]
+}
+
+
+/////PUT MOVIE/////
 ### PUT Movie ###
-PUT http://localhost:3000/movies/65cff32c59e0ab4e908b1df8 HTTP/1.1
+PUT http://localhost:3000/movies/65e03618052cf682e210894e HTTP/1.1
 Content-Type: application/json
 
 {
-    "title": "Interstellar",
-    "genre": "Science Fiction",
-    "director": "Christopher Nolan",
+   "title": "The Lego Movie",
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Phil Lord, Chris Miller",
     "year": 2014,
-    "rating": "PG-13"
+    "rating": "PG"
 }
 
+/////PUT ACTOR/////
+### PUT Actor ###
+PUT http://localhost:3000/actors/65cff32c59e0ab4e908b1df8 HTTP/1.1
+Content-Type: application/json
+
+{
+   "title": "The Lego Movie",
+    "release_year": 2014,
+    "actors": [
+                "Will Arnett", 
+                "Will Ferrell", 
+                "Elizabeth Banks", 
+                "Liam Neeson", 
+                "Chris Pratt", 
+                "Nick Offerman", 
+                "Alison Brie", 
+                "Morgan Freeman", 
+                "Charlie Day", 
+                "Channing Tatum",
+                "Aubrey Plaza", 
+                "Kumail Nanjiani",  
+                "T.J. Miller",
+    ]
+}
+
+
+/////DELETE MOVIE/////
 ### DELETE Movie ###
 DELETE http://localhost:3000/movies/65cea0da7b13d1a9ab2b089e HTTP/1.1
 
 
+/////DELETE ACTOR/////
+### DELETE Actors ###
+DELETE http://localhost:3000/actors/65cea0da7b13d1a9ab2b089e HTTP/1.1
 
-// PRODUCTION Deploy
+
+
+
+// PRODUCTION Deploy//
+/////GET ALL MOVIES/////
 ### GET All Movies ###
 GET https://cse341-winter24-uqt1.onrender.com/movies
 
-### POST New Movie ###
-POST https://cse341-winter24-uqt1.onrender.com/movies
+
+/////GET ALL ACTORS/////
+### GET All Actors ###
+GET https://cse341-winter24-uqt1.onrender.com/actors
+
+
+/////GET SINGLE MOVIE/////
+### GET Single Movie ###
+GET https://cse341-winter24-uqt1.onrender.com/movies/65e0360a052cf682e2108942
+### GET Single Movie ###
+GET https://cse341-winter24-uqt1.onrender.com/movies/65e0360a052cf682e2108943
+### GET Single Movie ###
+GET https://cse341-winter24-uqt1.onrender.com/movies/65e0360a052cf682e2108944
+### GET Single Movie ###
+GET https://cse341-winter24-uqt1.onrender.com/movies/65e0360a052cf682e2108945
+### GET Single Movie ###
+GET https://cse341-winter24-uqt1.onrender.com/movies/65e0360a052cf682e2108946
+### GET Single Movie ###
+GET https://cse341-winter24-uqt1.onrender.com/movies/65e0360a052cf682e2108947
+### GET Single Movie ###
+GET https://cse341-winter24-uqt1.onrender.com/movies/65e0360a052cf682e2108948
+
+
+/////GET SINGLE ACTOR/////
+### GET Single Actor ###
+GET https://cse341-winter24-uqt1.onrender.com/actors/65e03c74052cf682e2108950
+### GET Single Actor ###
+GET https://cse341-winter24-uqt1.onrender.com/actors/65e03c74052cf682e2108951
+### GET Single Actor ###
+GET https://cse341-winter24-uqt1.onrender.com/actors/65e03c74052cf682e2108952
+### GET Single Actor ###
+GET https://cse341-winter24-uqt1.onrender.com/actors/65e03c74052cf682e2108953
+### GET Single Actor ###
+GET https://cse341-winter24-uqt1.onrender.com/actors/65e03c74052cf682e2108954
+### GET Single Actor ###
+GET https://cse341-winter24-uqt1.onrender.com/actors/65e03c74052cf682e2108955
+### GET Single Actor ###
+GET https://cse341-winter24-uqt1.onrender.com/actors/65e03c74052cf682e2108956
+
+
+/////CREATE NEW MOVIE/////
+### CREATE New Movie ###
+POST https://cse341-winter24-uqt1.onrender.com/movies HTTP/1.1
 Content-Type: application/json
 
 {
-    "title": "Interstellar",
-    "genre": "Science Fiction",
-    "director": "Christopher Nolan",
+   "title": "Lego Movie",
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Phil Lord, Chris Miller",
     "year": 2014,
-    "rating": "PG-13"
+    "rating": "PG"
 }
 
-### GET Single Movie ###
-GET https://cse341-winter24-uqt1.onrender.com/movies/65cea088f940a690598b5834
-### GET Single Movie ###
-GET https://cse341-winter24-uqt1.onrender.com/movies/65cea088f940a690598b5835
-### GET Single Movie ###
-GET https://cse341-winter24-uqt1.onrender.com/movies/65cea088f940a690598b5836
-### GET Single Movie ###
-GET https://cse341-winter24-uqt1.onrender.com/movies/65cea088f940a690598b5837
 
-### Create movie
-POST https://cse341-winter24-uqt1.onrender.com/movies HTTP/1.1
+/////CREATE NEW ACTOR/////
+### Create New Actor###
+POST https://cse341-winter24-uqt1.onrender.com/actors HTTP/1.1
 content-type: application/json
 
 {
-   "title": "Interstellar",
-    "genre": "Science Fiction",
-    "director": "Christopher Noland",
-    "year": 2014,
-    "rating": "PG-13"
+   "title": "The Lego Movie",
+    "release_year": 2014,
+    "actors": [
+                "Will Arnett", 
+                "Will Ferrell", 
+                "Elizabeth Banks", 
+                "Liam Neeson", 
+                "Chris Pratt", 
+                "Nick Offerman", 
+                "Alison Brie", 
+                "Morgan Freeman", 
+                "Charlie Day", 
+                "Channing Tatum", 
+                "T.J. Miller",
+    ]
 }
 
 
+/////PUT MOVIE/////
 ### PUT Movie ###
-PUT https://cse341-winter24-uqt1.onrender.com/movies/65c7bafc7545626e519d8506 HTTP/1.1
+PUT https://cse341-winter24-uqt1.onrender.com/movies/65cff32c59e0ab4e908b1df8 HTTP/1.1
 Content-Type: application/json
 
 {
-    "title": "Interstellar",
-    "genre": "Science Fiction",
-    "director": "Christopher Nolan",
+   "title": "The Lego Movie",
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Phil Lord, Chris Miller",
     "year": 2014,
-    "rating": "PG-13"
+    "rating": "PG"
 }
 
+
+/////PUT ACTOR/////
+### PUT Actor ###
+PUT https://cse341-winter24-uqt1.onrender.com/actors/65cff32c59e0ab4e908b1df8 HTTP/1.1
+Content-Type: application/json
+
+{
+   "title": "The Lego Movie",
+    "release_year": 2014,
+    "actors": [
+                "Will Arnett", 
+                "Will Ferrell", 
+                "Elizabeth Banks", 
+                "Liam Neeson", 
+                "Chris Pratt", 
+                "Nick Offerman", 
+                "Alison Brie", 
+                "Morgan Freeman", 
+                "Charlie Day", 
+                "Channing Tatum",
+                "Aubrey Plaza", 
+                "Kumail Nanjiani",  
+                "T.J. Miller",
+    ]
+}
+
+
+/////DELETE MOVIE/////
 ### DELETE Movie ###
 DELETE https://cse341-winter24-uqt1.onrender.com/movies/65c86290d2d77d47b3e1bd18 HTTP/1.1
+
+
+/////DELETE ACTOR/////
+### DELETE actor ###
+DELETE https://cse341-winter24-uqt1.onrender.com/actors/65c86290d2d77d47b3e1bd18 HTTP/1.1

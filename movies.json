@@ -26,5 +26,26 @@
         "director": "Quentin Tarantino",
         "year": 1994,
         "rating": "R"
+    },
+    {
+        "title": "Toy Story",
+        "genre": "Animation, Adventure, Comedy",
+        "director": "John Lasseter",
+        "year": 1995,
+        "rating": "G"
+    },
+    {
+        "title": "Finding Nemo",
+        "genre": "Animation, Adventure, Comedy",
+        "director": "Andrew Stanton, Lee Unkrich",
+        "year": 2003,
+        "rating": "G"
+    },
+    {
+        "title": "The Lion King",
+        "genre": "Animation, Adventure, Drama",
+        "director": "Roger Allers, Rob Minkoff",
+        "year": 1994,
+        "rating": "G"
     }
 ]
