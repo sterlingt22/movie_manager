@@ -84,6 +84,14 @@ const validateActor = [
   (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
+      const customMessages = {
+        'title.notEmpty': 'Title is required',
+        'release_year.notEmpty': 'Release year is required',
+        'release_year.isNumeric': 'Release year must be a number',
+        'actors.isArray': 'At least one actor must be provided',
+        'actors.custom': 'Actors must be strings',
+      };
+      
       return res.status(422).json({ errors: errors.array() });
     }
 

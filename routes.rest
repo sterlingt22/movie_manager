@@ -208,7 +208,7 @@ content-type: application/json
                 "Morgan Freeman", 
                 "Charlie Day", 
                 "Channing Tatum", 
-                "T.J. Miller",
+                "T.J. Miller"
     ]
 }
 
@@ -248,7 +248,7 @@ Content-Type: application/json
                 "Channing Tatum",
                 "Aubrey Plaza", 
                 "Kumail Nanjiani",  
-                "T.J. Miller",
+                "T.J. Miller"
     ]
 }
 
