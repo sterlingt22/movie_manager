@@ -1,8 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongodb = require('./db/connect')
+const mongodb = require('./db/connect');
 const port = process.env.PORT || 3000;
 const routes = require('./routes');
+const session = require('express-session');
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs');
+require('dotenv').config();
 
 const app = express();
 
@@ -13,11 +17,11 @@ app
         next();
     })
     .use('/', routes);
- 
+
 process.on('uncaughtException', (err, origin) => {
-    console.error|process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`;
+    console.error(`Caught exception: ${err}\n` + `Exception origin: ${origin}`);
 });
- 
+
 mongodb.initDb((err) => {
     if (err) {
         console.log(err);

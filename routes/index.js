@@ -2,6 +2,8 @@ const express = require('express');
 const movie = require('./movies');
 const actor = require('./actors');
 const routes = express.Router();
+const jwt = require('jsonwebtoken');
+const jwtSecret = process.env.JWT_SECRET;
 const { auth } = require('express-openid-connect');
 
 const config = {
