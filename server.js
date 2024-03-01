@@ -8,6 +8,14 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 require('dotenv').config();
 
+function isAuthenticated(req, res, next) {
+    if (req.oidc.isAuthenticated()) {
+        next();
+    } else {
+        res.status(401).json({ error: 'Unauthorized' });
+    }
+}
+
 const app = express();
 
 app

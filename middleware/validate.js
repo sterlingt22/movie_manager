@@ -18,6 +18,23 @@ const jwtCheck = (req, res, next) => {
   }
 };
 
+function isAuthenticated(req, res, next) {
+    const token = req.header('Authorization');
+
+    if (!token) {
+        return res.status(401).json({ error: 'Unauthorized' });
+    }
+
+    try {
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        req.user = decoded.user;
+        next();
+    } catch (err) {
+        console.error(err);
+        res.status(400).json({ error: 'Token is not valid' });
+    }
+}
+
 const validateMovie = [
   check('title')
     .notEmpty()
@@ -126,5 +143,6 @@ const validateActor = [
 
 module.exports = {
   validateMovie,
-  validateActor
+  validateActor,
+  isAuthenticated
 };
