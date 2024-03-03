@@ -3,7 +3,8 @@ const mongodb = require('../db/connect');
 const { ObjectId } = require('mongodb');
 const actorsController = require('../controllers/actors');
 const { validateActor } = require('../middleware/validate');
-const { isAuthenticated } = require('../middleware/validate');
+const { isAuthenticated } = require('../middleware/validate'); 
+
 
 const routes = express.Router();
 

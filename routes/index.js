@@ -1,15 +1,16 @@
 const express = require('express');
-const movie = require('./movies');
+const moviesRoutes = require('./movies');
 const actor = require('./actors');
-const routes = express.Router();
 const jwt = require('jsonwebtoken');
 const jwtSecret = process.env.JWT_SECRET;
-const { auth } = require('express-openid-connect');
+const auth = require('express-openid-connect').auth;
+
+const routes = express.Router();
 
 const config = {
     authRequired: false,
     auth0Logout: true,
-    secret: 'dcFCFjp14F-k78Oo6YHKZJMwb5dLstqrA0g9Z6euqcfaRzLYSK1yWST2ni0UzUfb',
+    secret: 'mysecretkey',
     baseURL: 'https://cse341-winter24-uqt1.onrender.com',
     clientID: 'SK2BZMKiytoAFDgFtFqHXiUS71vCaN1n',
     issuerBaseURL: 'https://dev-aq4g00mxk5l1itvh.us.auth0.com'
@@ -22,7 +23,7 @@ routes.get('/', (req, res) => {
 });
 
 routes.use('/', require('./swagger'));
-routes.use('/movies', movie);
+routes.use('/movies', moviesRoutes);
 routes.use('/actors', actor);
 
 routes.use('/', (req, res, next) => {

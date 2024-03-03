@@ -74,7 +74,7 @@ content-type: application/json
                 "Morgan Freeman", 
                 "Charlie Day", 
                 "Channing Tatum", 
-                "T.J. Miller",
+                "T.J. Miller"
     ]
 }
 
@@ -99,47 +99,46 @@ Content-Type: application/json
 
 {
    "title": "The Lego Movie",
-    "release_year": 2014,
-    "actors": [
-                "Will Arnett", 
-                "Will Ferrell", 
-                "Elizabeth Banks", 
-                "Liam Neeson", 
-                "Chris Pratt", 
-                "Nick Offerman", 
-                "Alison Brie", 
-                "Morgan Freeman", 
-                "Charlie Day", 
-                "Channing Tatum",
-                "Aubrey Plaza", 
-                "Kumail Nanjiani",  
-                "T.J. Miller",
-    ]
+   "release_year": 2014,
+   "actors": [
+      "Will Arnett", 
+      "Will Ferrell", 
+      "Elizabeth Banks", 
+      "Liam Neeson", 
+      "Chris Pratt", 
+      "Nick Offerman", 
+      "Alison Brie", 
+      "Morgan Freeman", 
+      "Charlie Day", 
+      "Channing Tatum",
+      "Aubrey Plaza", 
+      "Kumail Nanjiani",  
+      "T.J. Miller"
+   ]
 }
+
 
 
 /////DELETE MOVIE/////
 ### DELETE Movie ###
-DELETE http://localhost:3000/movies/65cea0da7b13d1a9ab2b089e HTTP/1.1
+DELETE http://localhost:3000/movies/65e3daa54ee1a147f2f479ed HTTP/1.1
 
 
 /////DELETE ACTOR/////
 ### DELETE Actors ###
-DELETE http://localhost:3000/actors/65cea0da7b13d1a9ab2b089e HTTP/1.1
+DELETE http://localhost:3000/actors/65e4fd3f5d47138f99777210 HTTP/1.1
 
 
 
 
-// PRODUCTION Deploy//
+// PRODUCTION Deployment
 /////GET ALL MOVIES/////
 ### GET All Movies ###
 GET https://cse341-winter24-uqt1.onrender.com/movies
 
-
 /////GET ALL ACTORS/////
 ### GET All Actors ###
 GET https://cse341-winter24-uqt1.onrender.com/actors
-
 
 /////GET SINGLE MOVIE/////
 ### GET Single Movie ###
@@ -157,7 +156,6 @@ GET https://cse341-winter24-uqt1.onrender.com/movies/65e0360a052cf682e2108947
 ### GET Single Movie ###
 GET https://cse341-winter24-uqt1.onrender.com/movies/65e0360a052cf682e2108948
 
-
 /////GET SINGLE ACTOR/////
 ### GET Single Actor ###
 GET https://cse341-winter24-uqt1.onrender.com/actors/65e03c74052cf682e2108950
@@ -174,7 +172,6 @@ GET https://cse341-winter24-uqt1.onrender.com/actors/65e03c74052cf682e2108955
 ### GET Single Actor ###
 GET https://cse341-winter24-uqt1.onrender.com/actors/65e03c74052cf682e2108956
 
-
 /////CREATE NEW MOVIE/////
 ### CREATE New Movie ###
 POST https://cse341-winter24-uqt1.onrender.com/movies HTTP/1.1
@@ -187,7 +184,6 @@ Content-Type: application/json
     "year": 2014,
     "rating": "PG"
 }
-
 
 /////CREATE NEW ACTOR/////
 ### Create New Actor###
@@ -212,7 +208,6 @@ content-type: application/json
     ]
 }
 
-
 /////PUT MOVIE/////
 ### PUT Movie ###
 PUT https://cse341-winter24-uqt1.onrender.com/movies/65cff32c59e0ab4e908b1df8 HTTP/1.1
@@ -225,7 +220,6 @@ Content-Type: application/json
     "year": 2014,
     "rating": "PG"
 }
-
 
 /////PUT ACTOR/////
 ### PUT Actor ###
@@ -252,11 +246,9 @@ Content-Type: application/json
     ]
 }
 
-
 /////DELETE MOVIE/////
 ### DELETE Movie ###
 DELETE https://cse341-winter24-uqt1.onrender.com/movies/65c86290d2d77d47b3e1bd18 HTTP/1.1
-
 
 /////DELETE ACTOR/////
 ### DELETE actor ###

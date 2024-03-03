@@ -8,7 +8,7 @@ const swaggerDocument = require('./swagger.json');
 app
   .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
   .use(cors())
-  .use(epress.json())
+  .use(express.json())
   .use(express.urlencoded({ extended: true}))
   .use('/', require('./routes'));
 

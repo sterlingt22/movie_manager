@@ -26,6 +26,12 @@ app
     })
     .use('/', routes);
 
+
+app.use((err, req, res, next) => {
+    console.error(`Caught exception: ${err.stack}`);
+    res.status(500).json({ error: 'Internal Server Error' });
+});
+
 process.on('uncaughtException', (err, origin) => {
     console.error(`Caught exception: ${err}\n` + `Exception origin: ${origin}`);
 });
