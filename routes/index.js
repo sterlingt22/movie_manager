@@ -9,9 +9,9 @@ const { auth } = require('express-openid-connect');
 const config = {
     authRequired: false,
     auth0Logout: true,
-    secret: '57xg29C13cCPU6zkthW0Q5Cg5PuUcWtNn_KkFymFeOXwolvRFNREgmCMp8oBqt5h',
+    secret: 'dcFCFjp14F-k78Oo6YHKZJMwb5dLstqrA0g9Z6euqcfaRzLYSK1yWST2ni0UzUfb',
     baseURL: 'https://cse341-winter24-uqt1.onrender.com',
-    clientID: 'Hff8lp9f8fLlCcAPpCktmmcEXRRNk5VP',
+    clientID: 'SK2BZMKiytoAFDgFtFqHXiUS71vCaN1n',
     issuerBaseURL: 'https://dev-aq4g00mxk5l1itvh.us.auth0.com'
 };
 

@@ -229,7 +229,7 @@ Content-Type: application/json
 
 /////PUT ACTOR/////
 ### PUT Actor ###
-PUT https://cse341-winter24-uqt1.onrender.com/actors/65cff32c59e0ab4e908b1df8 HTTP/1.1
+PUT https://cse341-winter24-uqt1.onrender.com/actors/65e3db804ee1a147f2f479ee HTTP/1.1
 Content-Type: application/json
 
 {
