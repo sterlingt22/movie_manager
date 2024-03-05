@@ -5,8 +5,8 @@ const doc = {
     title: 'My API',
     description: 'movies API',
   },
-  host: 'localhost:3000',
-  schemes: ['http'],
+  host: 'https://cse341-winter24-uqt1.onrender.com',
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
